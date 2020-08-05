@@ -16,18 +16,21 @@ h2 {
     font-size: xx-large;
     font-family: fantasy;
     color: darkslateblue;
+    justify-content: center;
 }
 
 h3 {
   font-size: 30px;
   color: darkgreen;
   font-family: fantasy;
+  justify-content: center;
 }
 
 h4 {
     font-size: larger;
     color: indigo;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
 }
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -85,7 +88,7 @@ button {
    justify-content: center;
 }
 
-.container-fluid {
+.jumbotron {
     background-color: aqua;
     border-color: darkblue;
     justify-content: center;

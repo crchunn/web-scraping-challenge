@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mission to Mars</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Latitudes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html">Mission to Mars</a>
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Mission to Mars</h1>
+    <p class="lead">Just a basic page, showing pictures and random other information to random interwebs
+      cruisers...asking the random interweb people to like it.</p>
+    <hr class="my-4">
+    <p>Are you interested in new Mars shenanigans?</p>
+    <a class="btn btn-primary btn-lg" href="/scrape" role="button">New Data!</a>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <h2>Latest News</h2>
+        <h3>{{ mars.title }}</h3>
+        <h3>{{ mars.body }}</h3>
+      </div>
+      <div class="col-4">
+        <h4>Headed Out? See What Weather Awaits!</h4>
+        <h5>{{ mars.weather_tweet }}</h5>
+        <h4>Mars Facts to Impress</h4>
+        <h5>{{ mars.facts }}</h>
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h3>Check Out Our New Images</h3>
+      <img src="{{ mars.slide_fig }}">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h2>Hemisphere Photo Gallery</h2>
+    </div>
+  </div>
+  <!--hemisphere pictures-->
+  {% for picture in mars.pictures %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src=" {{ picture.pictures }}">
+
+      </div>
+      <div class="col">
+        <img src="{{ mars.pictures }}">
+      </div>
+    </div>
+    {%endfor%}
+</body>
+
+</html>
