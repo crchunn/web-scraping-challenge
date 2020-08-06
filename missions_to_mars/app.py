@@ -33,8 +33,8 @@ def scrape():
     mars.update({}, mars_data, upsert=True)
 
     # Redirect back to home page
-    return redirect("/")
-
+    #return redirect("/")
+    #return "scrape successful"
 
 if __name__ == "__main__":
     app.run(debug=True)
