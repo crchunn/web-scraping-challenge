@@ -66,26 +66,6 @@ def scrape():
 
 
 
-    # browser = init_browser()
-    # url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
-    # browser.visit(url)
-
-    # featured_image_url = browser.find_by_css('a.itemLink.product-item h3')
-    # featured_image_url.click()
-
-
-
-    # Find and click the full image button
-
-    # Find the more sample button and click that
-    # browser.is_element_present_by_text('Sample', wait_time=1)
-    # more_info_elem = browser.links.find_by_partial_text('Sample')
-
-
-
-    # img_url = more_info_elem.first['href']
-    # img_url
-
 
 
     browser = init_browser()
