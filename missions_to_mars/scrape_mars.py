@@ -149,7 +149,7 @@ def scrape():
 
     facts_df = facts_df.to_html('marsfacts.html')
     
-
+# once the info is pulled, slide into a dictionary
 
 
     mars_data = {
