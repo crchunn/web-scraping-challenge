@@ -163,7 +163,7 @@ def scrape():
     }
 
 
-
+# print all the data to insure it's arrival
     browser.quit()
     print(mars_data)
 
