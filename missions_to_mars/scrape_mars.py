@@ -31,17 +31,6 @@ def scrape():
 
 
 
-    # browser = init_browser()
-    # url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
-    # browser.visit(url)
-
-
-
-    #featured_image_url = browser.find_by_id("full_image")
-
-
-
-
     browser = init_browser()
     url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     browser.visit(url)
