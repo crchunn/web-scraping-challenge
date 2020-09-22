@@ -110,7 +110,7 @@ def scrape():
     slide_fig = soup.select_one("figure.lede a img").get("src")
 
 
-
+# bring in the tweets
 
     browser = init_browser()
 
@@ -118,6 +118,7 @@ def scrape():
     browser.visit(url)
     time.sleep(5)
 
+# make sure to use beautiful soup to parse the information
     html = browser.html
     soup = BeautifulSoup(html, "html.parser")
 
@@ -133,13 +134,13 @@ def scrape():
 
         
 
-
+# Just the facts
 
     facts_url = "https://space-facts.com/mars/"
     facts = pd.read_html(facts_url)
     facts
 
-
+# parse down into the website to grab up some information
 
     facts_df = facts[0]
     facts_df.rename({0: 'Description', 1: 'Value'}, axis=1, inplace=True)
